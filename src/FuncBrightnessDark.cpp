@@ -1,0 +1,6 @@
+void FuncBrightnessDark(boolean StateBrightness) {
+
+}
+
+
+
