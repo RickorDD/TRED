@@ -1,19 +1,16 @@
-#include <stdio.h>
 #include "LEDWhite.h"
 LEDWhite::LEDWhite()
 {
-	_states = false;
+
 }
 
-void LEDWhite::on()
+bool LEDWhite::on()
 {
-	printf ("%s \n", "LED On");
-	_states=true;
+	return 1;
 }
 
-void LEDWhite::off()
+bool LEDWhite::off()
 {
-	printf ("%s \n", "LED Off");
-	_states=false;
+	return 1;
 }
 

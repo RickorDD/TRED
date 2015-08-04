@@ -5,12 +5,9 @@ class LEDWhite
 {
 	public:
 		LEDWhite();
-		void on();
-		void off();
-		bool states();
+		bool on();
+		bool off();
 
-	private:
-		bool _states;
 };
 
 #endif
