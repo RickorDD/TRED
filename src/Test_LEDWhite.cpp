@@ -1,7 +1,9 @@
 #include "gtest/gtest.h"
 #include "LEDWhite.h"
+bool LEDStates;
 
 TEST(LEDWhiteFunc, Init) {
 	LEDWhite ledwhite;
-	//EXPECT_EQ(ledwhite, true);
+	ledwhite.on();
 }
+

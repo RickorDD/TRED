@@ -7,8 +7,10 @@ class LEDWhite
 		LEDWhite();
 		void on();
 		void off();
+		bool states();
+
+	private:
+		bool _states;
 };
-
-
 
 #endif
