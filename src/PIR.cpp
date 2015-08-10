@@ -1,11 +1,10 @@
-#include "Arduino.h"
 #include "PIR.h"
 
 #define PIN_PIRTOP A0
 #define PIN_PIRDOWN A1
 const int ValueMinPIR=600;
-#define VALUE_PIRTOP analogRead(PIN_PIRTOP)
-#define VALUE_PIRDOWN analogRead(PIN_PIRDOWN)
+#define VALUE_PIRTOP 700
+#define VALUE_PIRDOWN 0
 
 
 PIR::PIR()

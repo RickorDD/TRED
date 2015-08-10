@@ -1,9 +1,8 @@
-#include "Arduino.h"
 #include "Brightness.h"
 
 const int ValueMinBrightSensor=200;
-#define PIN_BrightSensor A2
-#define VALUE_BRIGHTSENSOR analogRead(PIN_BrightSensor)
+#define PIN_BrightSensor
+#define VALUE_BRIGHTSENSOR 100
 
 
 Brightness::Brightness()
