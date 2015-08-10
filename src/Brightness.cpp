@@ -1,8 +1,9 @@
 #include "Brightness.h"
+#include "Arduino.h"
 
 const int ValueMinBrightSensor=200;
-#define PIN_BrightSensor
-#define VALUE_BRIGHTSENSOR 100
+#define AnalogIn_BrightSensor 2
+#define VALUE_BRIGHTSENSOR analogRead(AnalogIn_BrightSensor)
 
 
 Brightness::Brightness()
@@ -20,5 +21,5 @@ bool Brightness::DedicateDark()
         else
   	{
         return 0;
-        }
+    }
 }

@@ -14,7 +14,7 @@ TEST(Brightness, Dark) {
 }
 
 TEST(PIR, DedicateMove) {
-	ASSERT_TRUE(pir.DedicateMove());
+	ASSERT_FALSE(pir.DedicateMove());
 }
 
 TEST(Switches, States) {

@@ -1,6 +1,8 @@
+#include "Arduino.h"
 #include "Switches.h"
 
-#define STATE_SWITCH 1
+#define DigitalIn_Switches 2
+#define STATE_SWITCH digitalRead(DigitalIn_Switches)
 
 Switches::Switches() {
 
