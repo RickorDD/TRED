@@ -9,5 +9,12 @@ class LED
 		void GoldOff();
 		void WhiteOn();
 		void WhiteOff();
+		bool WhiteState();
+		bool GoldState();
+		bool WhiteDim();
+		bool WhiteTime();
+	private:
+		bool _WhiteState;
+		bool _GoldState;
 };
 #endif
