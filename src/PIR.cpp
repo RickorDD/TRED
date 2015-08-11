@@ -1,4 +1,4 @@
-#include "Arduino.h"
+#include <Arduino.h>
 #include "PIR.h"
 
 #define AnalogIn_PIRTOP 0

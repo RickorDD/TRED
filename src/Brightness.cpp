@@ -1,5 +1,5 @@
+#include <Arduino.h>
 #include "Brightness.h"
-#include "Arduino.h"
 
 const int ValueMinBrightSensor=200;
 #define AnalogIn_BrightSensor 2

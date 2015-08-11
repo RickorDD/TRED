@@ -1,4 +1,4 @@
-#include "Arduino.h"
+#include <Arduino.h>
 #include "Switches.h"
 
 #define DigitalIn_Switches 2
