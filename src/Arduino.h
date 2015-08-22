@@ -14,3 +14,5 @@ void analogWrite(int pin, int pwm);
 int analogRead(int pin);
 
 bool digitalRead(int pin);
+
+int millis();

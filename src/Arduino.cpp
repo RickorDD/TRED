@@ -1,3 +1,4 @@
+#include <ctime>
 #include "Arduino.h"
 
 void delay(unsigned long ms) {
@@ -20,4 +21,9 @@ int analogRead(int pin)
 bool digitalRead(int pin)
 {
 	return 1;
+}
+
+int millis()
+{
+	return clock();
 }

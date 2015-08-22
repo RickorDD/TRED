@@ -1,8 +1,14 @@
+/*
+
 #include "gtest/gtest.h"
-#include "LED.h"
+int elapsed;
+
 int main(int argc, char **argv) {
 ::testing::InitGoogleTest(&argc, argv);
-return RUN_ALL_TESTS();
+auto result(RUN_ALL_TESTS());
+std::cout << ::testing::internal::TimeInMillis (::testing::UnitTest::GetInstance()->elapsed_time()) << std::endl;
+elapsed = ::testing::internal::TimeInMillis (::testing::UnitTest::GetInstance()->elapsed_time());
+return result;
 }
 
-
+*/

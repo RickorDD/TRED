@@ -1,10 +1,15 @@
 #include <Arduino.h>
 #include "LED.h"
+#include "cie1931.h"
 
 const int DigitalOut_LEDWHITE = 3;
 const int PWM_LEDWHITE = 50;
 const int DigitalOut_LEDGOLD = 9;
 const int PWM_LEDGOLD = 50;
+unsigned int count = 101;
+unsigned int Value;
+unsigned long prevMillis = 0;
+const unsigned int TimeDim = 40;
 
 #define LEDWHITEON analogWrite(DigitalOut_LEDWHITE,PWM_LEDWHITE);
 #define LEDWHITEOFF analogWrite(DigitalOut_LEDWHITE,0);
@@ -51,8 +56,18 @@ bool LED::WhiteState() {
 }
 
 bool LED::WhiteDim() {
-//TODO
-	return 0;
+	unsigned long curMillis = millis();
+	if ((curMillis - prevMillis) > TimeDim) {
+		prevMillis = millis();
+		Value=cie[count];
+		analogWrite(DigitalOut_LEDWHITE,Value);
+		count--;
+		}
+
+	if (count == 0)
+		return 0;
+	else
+		return 1;
 }
 
 bool LED::WhiteTime() {
