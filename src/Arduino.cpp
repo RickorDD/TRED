@@ -3,16 +3,23 @@
 #include <conio.h>
 #include <fstream>
 #include <iostream>
+#include <unistd.h>
 #include "Arduino.h"
 
 using namespace std;
 
 void delay(unsigned long ms) {
-
+	int s;
+	s=ms/1000;
+	sleep(s);
 }
 
 void pinMode(int pin, int mode) {
 
+}
+
+void digitalWrite(int pin, bool state) {
+	cout << "digitalWrite(" << pin << "," << state << ")" << endl;
 }
 
 void analogWrite(int pin, int pwm) {

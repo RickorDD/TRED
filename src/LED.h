@@ -1,6 +1,7 @@
 #ifndef LED_H
 #define LED_H
 #include "gtest/gtest.h"
+#include "PIR.h"
 
 class LED
 {
@@ -13,7 +14,8 @@ class LED
 		bool WhiteState();
 		bool GoldState();
 		bool WhiteDim();
-		bool WhiteTime();
+		bool WhiteDimFor();
+		bool WhiteTimeOn();
 	private:
 		bool _WhiteState;
 		bool _GoldState;
