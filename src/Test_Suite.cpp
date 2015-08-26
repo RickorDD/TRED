@@ -22,21 +22,18 @@ private:
 	}
 };
 
-TEST(PIRA0,Dedicate)
+TEST(PIRA0A1,Dedicate)
 {
-analogRead(0,300);
-ASSERT_TRUE(pir.DedicateMove());
-}
-
-TEST(PIRA1,Dedicate)
-{
-analogRead(1,700);
+analogReadMockInit();
+analogReadMock(0,600);
+analogReadMock(1,50);
 ASSERT_TRUE(pir.DedicateMove());
 }
 
 TEST(SWITCH,State)
 {
-digitalRead(2,1);
+digitalReadMockInit();
+digitalReadMock(2,1);
 ASSERT_TRUE(switches.States());
 }
 

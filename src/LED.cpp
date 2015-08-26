@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include "LED.h"
-#include "cie1931.h"
+#include "CIE1931.h"
 
 const int DigitalOut_LEDWHITE = 3;
 const int PWM_LEDWHITE = 50;
