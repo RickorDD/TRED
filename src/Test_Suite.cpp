@@ -17,14 +17,14 @@ private:
 	virtual void OnTestEnd(const ::testing::TestInfo& test_info) {
 		string testname = test_info.test_case_name();
 		if (testname == "LEDWhiteDim") {
-			ASSERT_LT(test_info.result()->elapsed_time(), 10000);
+			ASSERT_LT(test_info.result()->elapsed_time(), 4000);
 		}
 	}
 };
 
 TEST(PIRA0,Dedicate)
 {
-analogRead(0,700);
+analogRead(0,300);
 ASSERT_TRUE(pir.DedicateMove());
 }
 

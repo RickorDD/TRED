@@ -15,8 +15,14 @@ int analogRead(int pin);
 
 int analogRead(int pin,int value);
 
+void analogReadMock(int pin,int value);
+
 bool digitalRead(int pin);
 
-bool digitalRead(int pin,bool value);
+void digitalReadMock(int pin,bool value);
 
 int millis();
+
+void digitalReadMockInit();
+
+void analogReadMockInit();
