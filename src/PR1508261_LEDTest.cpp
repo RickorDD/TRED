@@ -1,3 +1,4 @@
+/*
 #include <Arduino.h>
 #include "LED.h"
 
@@ -19,3 +20,4 @@ int main() {
 		}
 	}
 }
+*/

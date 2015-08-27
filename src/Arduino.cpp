@@ -7,6 +7,8 @@
 #include "Arduino.h"
 
 using namespace std;
+time_t curtime;
+
 
 void delay(unsigned long ms) {
 	int s;
@@ -17,13 +19,16 @@ void delay(unsigned long ms) {
 void pinMode(int pin, int mode) {
 
 }
-
 void digitalWrite(int pin, bool state) {
-	cout << "digitalWrite(" << pin << "," << state << ")" << endl;
+	fstream datei("c:\\Daten\\C++\\TRED\\log.txt", ios::out | ios::app);
+	time(&curtime);
+	datei << ctime(&curtime) << "Pin: " << pin << " " << "State: " << state << endl;
 }
 
 void analogWrite(int pin, int pwm) {
-	cout << "analogWrite(" << pin << "," << pwm << ")" << endl;
+	fstream datei("c:\\Daten\\C++\\TRED\\log.txt", ios::out | ios::app);
+	time(&curtime);
+	datei << ctime(&curtime) << "Pin: " << pin << " " << "PWM: " << pwm << endl;
 }
 
 int analogRead(int pin) {

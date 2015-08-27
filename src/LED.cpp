@@ -61,17 +61,20 @@ bool LED::WhiteState() {
 
 bool LED::WhiteDim() {
 	unsigned long curMillis = millis();
-	if ((curMillis - prevMillis) > TimeDim) {
-		prevMillis = millis();
-		ValueCIELEDWhite = cie[count];
+	if (count <= 100) {
 		analogWrite(DigitalOut_LEDWHITE, ValueCIELEDWhite);
-		count--;
+		//std::cout << count << std::endl;
+		if ((curMillis - prevMillis) > TimeDim) {
+			prevMillis = millis();
+			ValueCIELEDWhite = cie[count];
+			count--;
+		}
 	}
-	if (count == 0)
+	if (count == 0) {
+		count = 100;
 		return 0;
-	else
+	} else
 		return 1;
-	//std::cout << count << std::endl;
 }
 
 bool LED::WhiteDimFor() {
