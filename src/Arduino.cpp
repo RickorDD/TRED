@@ -3,32 +3,42 @@
 #include <conio.h>
 #include <fstream>
 #include <iostream>
+#include <string.h>
 #include <unistd.h>
 #include "Arduino.h"
 
 using namespace std;
 time_t curtime;
 
-
 void delay(unsigned long ms) {
 	int s;
-	s=ms/1000;
+	s = ms / 1000;
 	sleep(s);
 }
 
 void pinMode(int pin, int mode) {
 
 }
+
 void digitalWrite(int pin, bool state) {
 	fstream datei("c:\\Daten\\C++\\TRED\\log.txt", ios::out | ios::app);
 	time(&curtime);
-	datei << ctime(&curtime) << "Pin: " << pin << " " << "State: " << state << endl;
+	struct tm * timeinfo;
+	char buffer[80];
+	timeinfo = localtime(&curtime);
+	strftime(buffer, 80, "%H:%M:%S", timeinfo);
+	datei << buffer << " " << "Pin: " << pin << " " << "State: " << state
+			<< endl;
 }
 
 void analogWrite(int pin, int pwm) {
 	fstream datei("c:\\Daten\\C++\\TRED\\log.txt", ios::out | ios::app);
 	time(&curtime);
-	datei << ctime(&curtime) << "Pin: " << pin << " " << "PWM: " << pwm << endl;
+	struct tm * timeinfo;
+	char buffer[80];
+	timeinfo = localtime(&curtime);
+	strftime(buffer, 80, "%H:%M:%S", timeinfo);
+	datei << buffer << " " << "Pin: " << pin << " " << "PWM: " << pwm << endl;
 }
 
 int analogRead(int pin) {

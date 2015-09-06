@@ -1,14 +1,12 @@
-#include <iostream>
-
 #include <Arduino.h>
 #include "LED.h"
 #include "PIR.h"
 #include "CIE1931.h"
 
 const int DigitalOut_LEDWHITE = 3;
-const int PWM_LEDWHITE = 50;
+const int PWM_LEDWHITE = 100;
 const int DigitalOut_LEDGOLD = 9;
-const int PWM_LEDGOLD = 50;
+const int PWM_LEDGOLD = 255;
 unsigned int count = 100;
 unsigned int ValueCIELEDWhite;
 unsigned long prevMillis = 0;

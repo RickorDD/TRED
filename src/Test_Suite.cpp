@@ -1,3 +1,4 @@
+/*
 #include <cstring>
 #include <Arduino.h>
 #include "gtest/gtest.h"
@@ -22,8 +23,8 @@ private:
 
 TEST(DISABLED_PIR_A0_A1,Dedicate) {
 	analogReadMockInit();
-	analogReadMock(0, 600);
-	analogReadMock(1, 50);
+	analogReadMock(0, 50);
+	analogReadMock(1, 700);
 	ASSERT_TRUE(pir.DedicateMove());
 }
 
@@ -56,3 +57,4 @@ int main(int argc, char **argv) {
 	listeners.Append(new TimeExecutionTest);
 	return RUN_ALL_TESTS();
 }
+*/
