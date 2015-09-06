@@ -29,10 +29,12 @@ void State::LEDGoldOff()
 
 bool State::LEDWhiteDim()
 {
-	while(led.WhiteDim());
 	bool State=led.WhiteDim();
 	if (State==0)
 		return 0;
 	else
+	{
+		while(led.WhiteDim());
 		return 1;
+	}
 }

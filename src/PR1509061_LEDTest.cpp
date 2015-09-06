@@ -7,7 +7,7 @@ int main() {
 	while (1) {
 		state.LEDWhiteOn();
 		delay(2000);
-		state.LEDWhiteOff();
+		state.LEDWhiteDim();
 		delay(2000);
 		state.LEDGoldOn();
 		delay(2000);

@@ -10,7 +10,7 @@ const int PWM_LEDGOLD = 255;
 unsigned int count = 100;
 unsigned int ValueCIELEDWhite;
 unsigned long prevMillis = 0;
-const unsigned int TimeDim = 40;
+const unsigned int TimeDim = 60;
 const unsigned int TimeLEDWhiteOn = 10000;
 
 #define LEDWHITEON analogWrite(DigitalOut_LEDWHITE,PWM_LEDWHITE);
