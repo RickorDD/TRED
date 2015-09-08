@@ -1,3 +1,4 @@
+/*
 #include <Arduino.h>
 #include "FSM.h"
 
@@ -16,3 +17,4 @@ int main() {
 	}
 
 }
+*/

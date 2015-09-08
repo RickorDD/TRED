@@ -26,8 +26,8 @@ void digitalWrite(int pin, bool state) {
 	struct tm * timeinfo;
 	char buffer[80];
 	timeinfo = localtime(&curtime);
-	strftime(buffer, 80, "%H:%M:%S", timeinfo);
-	datei << buffer << " " << "Pin: " << pin << " " << "State: " << state
+	strftime(buffer, 80, "%d.%m. %H:%M:%S", timeinfo);
+	datei << buffer << " OUTPUT " << "D" << pin << " State: " << state
 			<< endl;
 }
 
@@ -37,17 +37,24 @@ void analogWrite(int pin, int pwm) {
 	struct tm * timeinfo;
 	char buffer[80];
 	timeinfo = localtime(&curtime);
-	strftime(buffer, 80, "%H:%M:%S", timeinfo);
-	datei << buffer << " " << "Pin: " << pin << " " << "PWM: " << pwm << endl;
+	strftime(buffer, 80, "%d.%m. %H:%M:%S", timeinfo);
+	datei << buffer << " OUTPUT " << "D" << pin << " PWM:   " << pwm << endl;
 }
 
 int analogRead(int pin) {
 	int dateivalue;
 	int dateipin;
 	fstream datei("c:\\Daten\\C++\\TRED\\analogvalue.txt", ios::in);
+	fstream dateiout("c:\\Daten\\C++\\TRED\\log.txt", ios::out | ios::app);
+	time(&curtime);
+	struct tm * timeinfo;
+	char buffer[80];
+	timeinfo = localtime(&curtime);
+	strftime(buffer, 80, "%d.%m. %H:%M:%S", timeinfo);
 	while (datei >> dateipin) {
 		datei >> dateivalue;
 		if (dateipin == pin) {
+			dateiout << buffer << " INPUT  "<< "A" << dateipin << " Value: " << dateivalue << endl;
 			return dateivalue;
 		}
 	}
@@ -65,9 +72,16 @@ bool digitalRead(int pin) {
 	int dateivalue;
 	int dateipin;
 	fstream datei("c:\\Daten\\C++\\TRED\\digitalvalue.txt", ios::in);
+	fstream dateiout("c:\\Daten\\C++\\TRED\\log.txt", ios::out | ios::app);
+	time(&curtime);
+	struct tm * timeinfo;
+	char buffer[80];
+	timeinfo = localtime(&curtime);
+	strftime(buffer, 80, "%d.%m. %H:%M:%S", timeinfo);
 	while (datei >> dateipin) {
 		datei >> dateivalue;
 		if (dateipin == pin) {
+			dateiout << buffer << " INPUT  "<< "D" << dateipin << " State: " << dateivalue << endl;
 			return dateivalue;
 		}
 	}

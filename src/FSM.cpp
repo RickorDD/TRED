@@ -17,6 +17,11 @@ void State::LEDWhiteOff()
 	led.WhiteOff();
 }
 
+bool State::LEDWhite()
+{
+	return led.WhiteState();
+}
+
 void State::LEDGoldOn()
 {
 	led.GoldOn();
@@ -25,6 +30,11 @@ void State::LEDGoldOn()
 void State::LEDGoldOff()
 {
 	led.GoldOff();
+}
+
+bool State::LEDGold()
+{
+	return led.GoldState();
 }
 
 bool State::LEDWhiteDim()

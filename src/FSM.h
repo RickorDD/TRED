@@ -6,8 +6,10 @@ class State {
 	State();
 	void LEDWhiteOn();
 	void LEDWhiteOff();
+	bool LEDWhite();
 	void LEDGoldOn();
 	void LEDGoldOff();
+	bool LEDGold();
 	bool LEDWhiteDim();
 };
 
