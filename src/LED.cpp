@@ -8,6 +8,7 @@ const int PWM_LEDWHITE = 100;
 const int DigitalOut_LEDGOLD = 9;
 const int PWM_LEDGOLD = 255;
 unsigned int count = 100;
+unsigned int Value, ValueNeg;
 unsigned int ValueCIELEDWhite;
 unsigned long prevMillis = 0;
 const unsigned int TimeDim = 60;
@@ -58,17 +59,15 @@ bool LED::WhiteState() {
 }
 
 bool LED::WhiteDim() {
-	if (count <= 100) {
-		ValueCIELEDWhite = cie[count];
-		analogWrite(DigitalOut_LEDWHITE, ValueCIELEDWhite);
-		unsigned long curMillis = millis();
-		if ((curMillis - prevMillis) > TimeDim) {
-			prevMillis = millis();
-			count--;
-		}
+	ValueNeg = 100 - Value;
+	ValueCIELEDWhite = cie[ValueNeg];
+	analogWrite(DigitalOut_LEDWHITE, ValueCIELEDWhite);
+	unsigned long curMillis = millis();
+	if ((curMillis - prevMillis) > TimeDim) {
+		prevMillis = millis();
+		Value = (Value + 1) % 101;
 	}
-	if (count == 0) {
-		count = 100;
+	if (ValueNeg == 0) {
 		return 0;
 	} else
 		return 1;
