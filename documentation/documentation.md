@@ -71,14 +71,14 @@ UNO durch Micro ersetzt
 20.05.2015   
 *PR1505201_TRED_V1_2*
 
-18.06.2015
+18.06.2015  
 *PR1506183_TRED_V1_3*
 
 04.08.2015  
 C-Libraries angefangen
 *PR1508041_Library_LEDWhite*
 
-10.08.2015
+10.08.2015  
 *PR1508101_CUnit_Libraries*
 
 17.08.2015  
@@ -100,7 +100,7 @@ FSM erstellt
 oberes Gehäuse neu gestaltet und in Slub gedruckt,   
 da Klebevariante nicht gehalten
 
-03.10.2015
+03.10.2015  
 *PR1510031_WhiteDimTest*
 
 14.10.2015  
