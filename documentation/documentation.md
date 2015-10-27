@@ -8,41 +8,41 @@ DuoProfil mit weiß nach unten
 Kabel verlegt
 
 02.02.2015  
-Protobrett mit LM317 und PWM 161
+Protobrett mit LM317 und PWM 161  
 *PR1502021_PWM*
 
 06.02.2015  
 Test mit Ultraschallsensoren HC-SR04, diese knacken aber
-1m Conrad YourLED Gold nach oben getestet
+1m Conrad YourLED Gold nach oben getestet  
 *PR1502061_HCSR04*
 
 21.02.2015  
-2 PIR Sensoren (HC-SR501) getestet
+2 PIR Sensoren (HC-SR501) getestet  
 *PR1502121_PIR*
 
 02.03.2015  
 2m LED Gold mit PWM 130
 
 03.03.2015  
-Standortsuche PIRs
+Standortsuche PIRs  
 *PR1503031_PIR_LED*
 
 10.03.2015  
-Umschaltung mit 12V Relais getestet
+Umschaltung mit 12V Relais getestet  
 *PR1503101_WSGD_Relay*
 
 11.03.2015  
 2 PIRs und Fotodiode integriert
-Kabel verlegt
+Kabel verlegt  
 *PR1503112_2PIR_millis*
 
 12.03.2015  
-Änderung der Zeitfunktion, jede Bewegung startet 30sek neu  
+Änderung der Zeitfunktion, jede Bewegung startet 30sek neu    
 *PR1503113_TRED_unsigned_millis.ino*
 
 20.03.2015  
 Relaislösung durch 2. LM317 ersetzt, weil Relais Schaltprobleme (bekommen nur 8V)  
-LM317 schwingt sich aber auf
+LM317 schwingt sich aber auf  
 *PR1503181_Gold_Verz*
 
 22.03.2015  
