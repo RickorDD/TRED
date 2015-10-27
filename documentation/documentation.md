@@ -37,10 +37,10 @@ Umschaltung mit 12V Relais getestet
 Kabel verlegt
 
 12.03.2015  
-Ąnderung der Zeitfunktion, jede Bewegung startet 30sek neu
+Änderung der Zeitfunktion, jede Bewegung startet 30sek neu
 
 20.03.2015  
-Relaisl�sung durch 2. LM317 ersetzt, weil Relais Schaltprobleme (bekommen nur 8V)
+Relaislösung durch 2. LM317 ersetzt, weil Relais Schaltprobleme (bekommen nur 8V)
 LM317 schwingt sich aber auf
 
 23.03.2015  
