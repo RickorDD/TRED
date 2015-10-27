@@ -47,45 +47,41 @@ LM317 schwingt sich aber auf
 2 TIP120 Darlington mit 1k Basiswiderstand
 PWM=0 sperrt, PWM=255 11,5V
 
-25.03.2015
-5V Regler TSR 1-2450 f�r Vin Arduino
+25.03.2015  
+5V Regler TSR 1-2450 für Vin Arduino
 
-26.03.2015
-3D PIR Geh�use mit openSCAD
+26.03.2015  
+3D PIR Gehäuse mit openSCAD
 
-02.04.2015
+02.04.2015  
 UNO durch Micro ersetzt
 
-08.04.2015
+08.04.2015  
 2.PIR an Lampenende Treppe versetzt, statt an Holztreppenbalken
 
-16.05.2015
-3D Druck 2 Geh�use und Montage
+16.05.2015  
+3D Druck 2 Gehäuse und Montage
 
-04.08.2015
+04.08.2015  
 C-Libraries angefangen
 
-17.08.2015
-UML und Geh�use rausgesucht
+17.08.2015  
+UML und Gehäuse rausgesucht
 
-21.08.2015
-alles ins Geh�use gebaut
+21.08.2015  
+alles ins Gehäuse gebaut  
 Eclipse C mit Googletest installiert
 
-26.08.2015
-Feinsicherung mitteltr�ge 250mA eingebaut (Strom 80mA)
+26.08.2015  
+Feinsicherung mittelträge 250mA eingebaut (Strom 80mA)
 Eclipse C digitalReadMock/analogReadMock geschrieben
-Test f�r Laufzeit der Dimfunktion
+Test für Laufzeit der Dimfunktion
 
-31.08.2015
+31.08.2015  
 FSM erstellt
 
-15.09.2015
-oberes Geh�use neu gestaltet und in Slub gedruckt, da Klebevariante nicht gehalten
+15.09.2015  
+oberes Gehäuse neu gestaltet und in Slub gedruckt, da Klebevariante nicht gehalten
 
-14.10.2015
-Tasterl�sung f�r Busch Jaeger als Diagramm erstellt
- 
-
-
-Versionen
+14.10.2015  
+Tasterlösung für Busch Jaeger als Diagramm erstellt
