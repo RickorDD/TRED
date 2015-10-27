@@ -37,21 +37,21 @@ Umschaltung mit 12V Relais getestet
 Kabel verlegt
 
 12.03.2015  
-Änderung der Zeitfunktion, jede Bewegung startet 30sek neu
+Änderung der Zeitfunktion, jede Bewegung startet 30sek neu  
 
 20.03.2015  
-Relaislösung durch 2. LM317 ersetzt, weil Relais Schaltprobleme (bekommen nur 8V)
+Relaislösung durch 2. LM317 ersetzt, weil Relais Schaltprobleme (bekommen nur 8V)  
 LM317 schwingt sich aber auf
 
 23.03.2015  
-2 TIP120 Darlington mit 1k Basiswiderstand
-PWM=0 sperrt, PWM=255 11,5V
+2 TIP120 Darlington mit 1k Basiswiderstand  
+PWM=0 sperrt, PWM=255 11,5V  
 
 25.03.2015  
-5V Regler TSR 1-2450 für Vin Arduino
+5V Regler TSR 1-2450 für Vin Arduino  
 
 26.03.2015  
-3D PIR Gehäuse mit openSCAD
+3D PIR Gehäuse mit openSCAD  
 
 02.04.2015  
 UNO durch Micro ersetzt
@@ -73,15 +73,16 @@ alles ins Gehäuse gebaut
 Eclipse C mit Googletest installiert
 
 26.08.2015  
-Feinsicherung mittelträge 250mA eingebaut (Strom 80mA)
-Eclipse C digitalReadMock/analogReadMock geschrieben
+Feinsicherung mittelträge 250mA eingebaut (Strom 80mA)  
+Eclipse C digitalReadMock/analogReadMock geschrieben  
 Test für Laufzeit der Dimfunktion
 
 31.08.2015  
 FSM erstellt
 
 15.09.2015  
-oberes Gehäuse neu gestaltet und in Slub gedruckt, da Klebevariante nicht gehalten
+oberes Gehäuse neu gestaltet und in Slub gedruckt,   
+da Klebevariante nicht gehalten
 
 14.10.2015  
 Tasterlösung für Busch Jaeger als Diagramm erstellt
