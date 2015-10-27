@@ -4,7 +4,7 @@
 3m YourLED warmweiss LED Strip mit Netzteil
 
 05.01.2015  
-DuoProfil mit weißŸ nach unten
+DuoProfil mit weiÃŸ nach unten
 Kabel verlegt
 
 02.02.2015  
@@ -40,7 +40,7 @@ Kabel verlegt
 Ä„nderung der Zeitfunktion, jede Bewegung startet 30sek neu
 
 20.03.2015  
-Relaislösung durch 2. LM317 ersetzt, weil Relais Schaltprobleme (bekommen nur 8V)
+Relaislï¿½sung durch 2. LM317 ersetzt, weil Relais Schaltprobleme (bekommen nur 8V)
 LM317 schwingt sich aber auf
 
 23.03.2015  
@@ -48,10 +48,10 @@ LM317 schwingt sich aber auf
 PWM=0 sperrt, PWM=255 11,5V
 
 25.03.2015
-5V Regler TSR 1-2450 für Vin Arduino
+5V Regler TSR 1-2450 fï¿½r Vin Arduino
 
 26.03.2015
-3D PIR Gehäuse mit openSCAD
+3D PIR Gehï¿½use mit openSCAD
 
 02.04.2015
 UNO durch Micro ersetzt
@@ -60,31 +60,31 @@ UNO durch Micro ersetzt
 2.PIR an Lampenende Treppe versetzt, statt an Holztreppenbalken
 
 16.05.2015
-3D Druck 2 Gehäuse und Montage
+3D Druck 2 Gehï¿½use und Montage
 
 04.08.2015
 C-Libraries angefangen
 
 17.08.2015
-UML und Gehäuse rausgesucht
+UML und Gehï¿½use rausgesucht
 
 21.08.2015
-alles ins Gehäuse gebaut
+alles ins Gehï¿½use gebaut
 Eclipse C mit Googletest installiert
 
 26.08.2015
-Feinsicherung mittelträge 250mA eingebaut (Strom 80mA)
+Feinsicherung mitteltrï¿½ge 250mA eingebaut (Strom 80mA)
 Eclipse C digitalReadMock/analogReadMock geschrieben
-Test für Laufzeit der Dimfunktion
+Test fï¿½r Laufzeit der Dimfunktion
 
 31.08.2015
 FSM erstellt
 
 15.09.2015
-oberes Gehäuse neu gestaltet und in Slub gedruckt, da Klebevariante nicht gehalten
+oberes Gehï¿½use neu gestaltet und in Slub gedruckt, da Klebevariante nicht gehalten
 
 14.10.2015
-Tasterlösung für Busch Jaeger als Diagramm erstellt
+Tasterlï¿½sung fï¿½r Busch Jaeger als Diagramm erstellt
  
 
 
