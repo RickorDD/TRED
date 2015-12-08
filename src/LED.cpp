@@ -10,9 +10,9 @@ const int PWM_LEDGOLD = 255;
 unsigned int count = 100;
 unsigned int Value, ValueNeg;
 unsigned int ValueCIELEDWhite;
-unsigned long prevMillis = 0;
-const unsigned int TimeDim = 60;
-const unsigned int TimeLEDWhiteOn = 10000;
+unsigned long ul_prevMillis = 0UL;
+const unsigned long ul_TimeDim = 60UL;
+const unsigned int ul_TimeLEDWhiteOn = 10000UL;
 
 #define LEDWHITEON analogWrite(DigitalOut_LEDWHITE,PWM_LEDWHITE);
 #define LEDWHITEOFF analogWrite(DigitalOut_LEDWHITE,0);
@@ -62,9 +62,9 @@ bool LED::WhiteDim() {
 	ValueNeg = 100 - Value;
 	ValueCIELEDWhite = cie[ValueNeg];
 	analogWrite(DigitalOut_LEDWHITE, ValueCIELEDWhite);
-	unsigned long curMillis = millis();
-	if ((curMillis - prevMillis) > TimeDim) {
-		prevMillis = millis();
+	unsigned long ul_curMillis = millis();
+	if ((ul_curMillis - ul_prevMillis) > ul_TimeDim) {
+		ul_prevMillis = millis();
 		Value = (Value + 1) % 101;
 	}
 	if (ValueNeg == 0) {
@@ -76,10 +76,10 @@ bool LED::WhiteDim() {
 bool LED::WhiteDimFor() {
 
 	for (unsigned int i = 100; i >= 0;) {
-		unsigned long curMillis = millis();
+		unsigned long ul_curMillis = millis();
 //TODO	if (i == 40) break;
-		if ((curMillis - prevMillis) > TimeDim) {
-			prevMillis = millis();
+		if ((ul_curMillis - ul_prevMillis) > ul_TimeDim) {
+			ul_prevMillis = millis();
 			i--;
 			if (i == 0)
 				return 0;
@@ -91,9 +91,9 @@ bool LED::WhiteDimFor() {
 }
 
 bool LED::WhiteTimeOn() {
-	unsigned long curMillis = millis();
-	if ((curMillis - prevMillis) > TimeLEDWhiteOn) {
-		prevMillis = millis();
+	unsigned long ul_curMillis = millis();
+	if ((ul_curMillis - ul_prevMillis) > ul_TimeLEDWhiteOn) {
+		ul_prevMillis = millis();
 		return 0;
 	} else
 		return 1;
